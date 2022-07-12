@@ -1,0 +1,10 @@
+<h1>Items...</h1>
+<button type="button" (click)="onAddItem()">Add Item</button>
+
+<form>
+  <div *ngFor="let item of items">
+    <input type="text" name="f1" [(ngModel)]="item.field1">
+    <input type="text" name="f2" [(ngModel)]="item.field2">
+    <input type="text" name="f3" [(ngModel)]="item.field3">
+  </div>
+</form>
